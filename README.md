@@ -2,8 +2,29 @@
 Jira Cheat Sheet with the most needed stuff..
 
 
+# Security
+
+## API Tokens
+- https://id.atlassian.com/manage-profile/security/api-tokens
+
+
+
+
+
+
+
+
+
+
 <br><br>
 <br><br>
+
+___
+
+
+<br><br>
+<br><br>
+
 
 
 # Show all Tickets which are DONE
