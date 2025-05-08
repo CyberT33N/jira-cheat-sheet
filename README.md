@@ -2,6 +2,14 @@
 Jira Cheat Sheet with the most needed stuff..
 
 
+
+
+
+
+
+
+
+
 # Security
 
 ## API Tokens
@@ -12,6 +20,57 @@ Jira Cheat Sheet with the most needed stuff..
 
 
 
+
+<br><br>
+<br><br>
+
+___
+
+
+<br><br>
+<br><br>
+
+
+
+# MCP
+
+## Unofficial
+- https://github.com/sooperset/mcp-atlassian
+
+```shell
+docker pull ghcr.io/sooperset/mcp-atlassian:latest
+```
+
+```json
+{
+  "mcpServers": {
+    "mcp-atlassian": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e", "CONFLUENCE_URL",
+        "-e", "CONFLUENCE_USERNAME",
+        "-e", "CONFLUENCE_API_TOKEN",
+        "-e", "JIRA_URL",
+        "-e", "JIRA_USERNAME",
+        "-e", "JIRA_API_TOKEN",
+        "ghcr.io/sooperset/mcp-atlassian:latest"
+      ],
+      "env": {
+        "CONFLUENCE_URL": "https://your-company.atlassian.net/wiki",
+        "CONFLUENCE_USERNAME": "your.email@company.com",
+        "CONFLUENCE_API_TOKEN": "your_confluence_api_token", // https://id.atlassian.com/manage-profile/security/api-tokens
+        "JIRA_URL": "https://your-company.atlassian.net",
+        "JIRA_USERNAME": "your.email@company.com",
+        "JIRA_API_TOKEN": "your_jira_api_token" // https://id.atlassian.com/manage-profile/security/api-tokens
+      }
+    }
+  }
+}
+```
+- https://id.atlassian.com/manage-profile/security/api-tokens
 
 
 
